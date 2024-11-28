@@ -11,7 +11,7 @@ const FooterBusinessInfoItem: React.FC<IProps> = ({ info }) => {
       <span className="text-gray-title mb-[10px] text-xs">{info.title}</span>
       {info.content && <span className="text-gray-subtitle mb-[5px] text-[13px]">{info.content}</span>}
       <div className="grid gap-[5px] text-[13px] text-gray-subtitle">
-        {info.englsh_content?.map((content) => <span>{content}</span>)}
+        {info.englsh_content?.map((content) => <span key={content}>{content}</span>)}
       </div>
     </div>
   );

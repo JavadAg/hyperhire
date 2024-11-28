@@ -8,7 +8,14 @@ async function getCarouselData(): Promise<TCarouselCardData[]> {
       revalidate: 3600,
     },
   });
-  return res.json();
+
+  const data = await res.json();
+
+  if (data) {
+    return data;
+  } else {
+    return [];
+  }
 }
 
 async function getSliderData(): Promise<TSliderItem[]> {
@@ -17,7 +24,14 @@ async function getSliderData(): Promise<TSliderItem[]> {
       revalidate: 3600,
     },
   });
-  return res.json();
+
+  const data = await res.json();
+
+  if (data) {
+    return data;
+  } else {
+    return [];
+  }
 }
 
 export default async function Home() {

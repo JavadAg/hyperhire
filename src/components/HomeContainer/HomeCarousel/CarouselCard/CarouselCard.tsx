@@ -27,7 +27,9 @@ const CarouselCard: React.FC<IProps> = ({ card }) => {
       </div>
       <div className="flex gap-x-0.5 gap-y-1 flex-wrap justify-center items-center">
         {card.skills.map((skill) => (
-          <span className="border line-clamp-1 px-3 py-1 border-card-tag-border text-gray-subtitle rounded-md font-black text-sm">
+          <span
+            key={skill}
+            className="border line-clamp-1 px-3 py-1 border-card-tag-border text-gray-subtitle rounded-md font-black text-sm">
             {skill}
           </span>
         ))}

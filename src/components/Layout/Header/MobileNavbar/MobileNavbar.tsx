@@ -1,4 +1,4 @@
-import { SheetTrigger, SheetContent, SheetHeader, SheetTitle, SheetDescription, Sheet } from '@/components/ui/Sheet';
+import { SheetTrigger, SheetContent, SheetHeader, SheetTitle, Sheet } from '@/components/ui/Sheet';
 import { Menu } from 'lucide-react';
 import type { TNavList } from '../Header';
 import coloredLogo from '@/assets/images/logo-colored.svg';
